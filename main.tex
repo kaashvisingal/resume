@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Kaashvi Singal} \\ \vspace{1pt}
+    \small 669-265-5635 $|$ \href{mailto:x@x.com}{\underline{kaashvisingal@berkeley.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/kaashvisingal}} $|$
+    \href{https://github.com/...}{\underline{github.com/kaashvisingal}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelor of Arts in Data Science, Molecular and Cell Biology, GPA: 3.5/4.0} {Aug. 2022 -- Dec. 2025}
+  \resumeSubHeadingListEnd
+
+\vspace{-2mm} % reduces the gap
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Involvements}: DataGood (\textbf{President}), Phi Beta Lambda (\textbf{Biotech Chair}), Asha for Education (\textbf{Project Manager})
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Operations Intern}{May 2025 -- Aug. 2025}
+      {Core Ranger}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a Python rebate calculation system for 175 vendors, processing 10,000+ of transactions with complex business rules, improving payout accuracy on \$500K+ disbursements and reducing manual review workload}
+        \resumeItem{Built an interactive Streamlit dashboard with Pandas, NumPy, and RegEx to analyze 100K+ rebate transactions, cutting assessment review time by 40\% while maintaining 98\% validation accuracy and strengthening AI datasets}
+        \resumeItem{Formulated and tested REST API connectors with Core Ranger’s rebate platform in a sandbox environment using Postman, automating 250+ monthly journal entries via Azure and Python connectors, cutting posting time by 60\%}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Data Project Manager (Contract)}{Jan. 2025 -- May 2025}
+      {Noora Health}{Berkeley, CA}
+      \resumeItemListStart
+        \resumeItem{Evaluated voice-based health programs by analyzing 5,000+ patient interactions, identifying trends in engagement}
+        \resumeItem{Queried and aggregated 10,000+ records using Google BigQuery and applied statistical analyses in Python (Pandas, Matplotlib) and R to generate actionable insights for program improvements}
+        \resumeItem{Delivered Tableau dashboards that guided program scaling decisions, improving reach and operational efficiency}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Data Analyst (Contract)}{Aug. 2024 -- Dec. 2024}
+      {Oakland Promise}{Oakland, CA}
+      \resumeItemListStart
+        \resumeItem{Analyzed 5,000+ survey responses using SQL and Pandas and built a Tableau dashboard with demographic-specific data visualizations, driving a new funding allocation strategy that expanded reach to underserved student groups}
+        \resumeItem{Delivered affordability insights that reshaped scholarship allocation and optimized outreach strategy for  stakeholders, leading to a projected 20\% participation increase and improved equity in student support programs}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Intern}{June 2024 -- Aug. 2024}
+      {Antibody Design}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Engineered an iOS app in Swift using machine learning to classify COVID test results from 2,000+ training images}
+        \resumeItem{Applied image preprocessing, feature extraction, and data augmentation to train CoreML models in CreateML, achieving 95\% classification accuracy and improving diagnostic reliability by 30\% in preliminary field testing}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Strategy Consultant (Contract)}{Jan. 2024 – June 2024}
+      {American Red Cross}{Washington, D.C.}
+      \resumeItemListStart
+        \resumeItem{Analyzed survey data from 100+ UC Berkeley students and 10+ marketing campaigns to identify key drivers of Gen Z blood donation, recommending 5 data-driven outreach strategies with measurable KPIs}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Orbital Debris Classifier and Visualizer} $|$ \emph{Python, PyTorch, OpenCV, scikit-image, SciPy, scikit-learn}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a PyTorch workflow to preprocess satellite images and extract features for debris classification}
+            \resumeItem{Trained Random Forest classifiers on data from varying orbital conditions, achieving 90\% precision and recall}
+            \resumeItem{Built visualizations to explore debris patterns and model performance across different orbital regimes}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Custom World Explorer Engine} $|$ \emph{Java, JavaFX, Maven, IntelliJ, Git, JUnit}}{}
+          \resumeItemListStart
+            \resumeItem{Programmed a 2D tile-based world generator with an 80x50 grid and 14 randomly sized rooms}
+            \resumeItem{Implemented AABB collision detection, dynamic avatar movement, and collectibles with edge-case handling}
+            \resumeItem{Used JavaFX for graphical interface and JUnit for testing, ensuring reproducible and playable environments}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python (NumPy, Pandas, RegEx), Java, Swift, SQL, R, JavaScript/TypeScript, HTML/CSS, LaTeX} \\
+     \textbf{Frameworks \& Libraries}{: Streamlit, CoreML, scikit-learn, PyTorch, TensorFlow, Matplotlib, Seaborn, Plotly, React} \\
+     \textbf{Developer Tools}{: Git, Docker, IntelliJ, VS Code, PyCharm, Jupyter Notebooks, Tableau, Power BI, RESTful APIs, Postman, Microsoft Azure, Google Cloud (BigQuery)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
